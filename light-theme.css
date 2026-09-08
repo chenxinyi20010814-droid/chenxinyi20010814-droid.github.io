@@ -1,0 +1,313 @@
+/* Flight Atlas — daylight research desk. Loaded after the graphite theme. */
+html[data-theme='light'] {
+  color-scheme: light;
+  --background: #f4f7f9;
+  --foreground: #17222c;
+  --card: #ffffff;
+  --card-foreground: #17222c;
+  --popover: #ffffff;
+  --popover-foreground: #17222c;
+  --primary: #176b8f;
+  --primary-foreground: #ffffff;
+  --secondary: #eaf0f4;
+  --secondary-foreground: #20303c;
+  --muted: #edf2f5;
+  --muted-foreground: #657582;
+  --accent: #e2edf3;
+  --accent-foreground: #15384a;
+  --border: #d4dde3;
+  --input: #c5d1d9;
+  --ring: #176b8f;
+  background: #f4f7f9;
+}
+
+html[data-theme='light'] body,
+html[data-theme='light'] .gallery,
+html[data-theme='light'] .fleet-gallery {
+  color: #17222c;
+  background: #f4f7f9;
+}
+
+html[data-theme='light'] ::selection { color: #fff; background: #176b8f; }
+html[data-theme='light'] button:focus-visible,
+html[data-theme='light'] a:focus-visible { outline-color: #176b8f; }
+
+/* Navigation */
+html[data-theme='light'] .fleet-gallery .topbar,
+html[data-theme='light'] .topbar {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: #d8e0e5;
+  box-shadow: 0 9px 28px rgba(32, 54, 67, 0.08);
+}
+html[data-theme='light'] .brand { color: #102e42; text-shadow: none; }
+html[data-theme='light'] .brand-rule { background: #9aa9b3; }
+html[data-theme='light'] .overline,
+html[data-theme='light'] .edition,
+html[data-theme='light'] .fleet-gallery .top-actions > a { color: #647582; }
+html[data-theme='light'] .fleet-gallery .top-actions > a:hover,
+html[data-theme='light'] .quiet-button:hover,
+html[data-theme='light'] .icon-button:hover,
+html[data-theme='light'] .jump-compare:hover { color: #0f668d; }
+html[data-theme='light'] .quiet-button,
+html[data-theme='light'] .icon-button,
+html[data-theme='light'] .jump-compare { color: #4d606d; }
+html[data-theme='light'] .theme-toggle {
+  color: #244554;
+  border-color: #c8d3da;
+  background: #f4f7f9;
+}
+html[data-theme='light'] .theme-toggle:hover {
+  color: #fff;
+  border-color: #176b8f;
+  background: #176b8f;
+}
+html[data-theme='light'] .stage-sort,
+html[data-theme='light'] .picker-toggle {
+  color: #38515e;
+  border-color: #bdcad2;
+  background: #fff;
+}
+html[data-theme='light'] .stage-sort:hover,
+html[data-theme='light'] .stage-sort[aria-pressed='true'],
+html[data-theme='light'] .picker-toggle:hover {
+  color: #fff;
+  border-color: #176b8f;
+  background: #176b8f;
+}
+html[data-theme='light'] .picker-toggle small { color: #687b87; }
+html[data-theme='light'] .picker-toggle:hover small { color: #dcecf3; }
+
+/* Company gallery */
+html[data-theme='light'] .company-nav { background: #fbfcfd; border-bottom-color: #d6dfe5; }
+html[data-theme='light'] .company-tabs,
+html[data-theme='light'] .mode-tabs,
+html[data-theme='light'] .spec-tabs,
+html[data-theme='light'] .reuse-tabs {
+  background: #edf2f5 !important;
+  border-color: #cdd8df !important;
+}
+html[data-theme='light'] .company-tabs [data-slot='tabs-trigger'],
+html[data-theme='light'] .mode-tabs [data-slot='tabs-trigger'],
+html[data-theme='light'] .spec-tabs [data-slot='tabs-trigger'],
+html[data-theme='light'] .reuse-tabs [data-slot='tabs-trigger'] { color: #536875; }
+html[data-theme='light'] .company-tabs [data-active],
+html[data-theme='light'] .company-tabs [data-state='active'],
+html[data-theme='light'] .mode-tabs [data-active],
+html[data-theme='light'] .mode-tabs [data-state='active'],
+html[data-theme='light'] .spec-tabs [data-active],
+html[data-theme='light'] .spec-tabs [data-state='active'],
+html[data-theme='light'] .reuse-tabs [data-active],
+html[data-theme='light'] .reuse-tabs [data-state='active'] {
+  color: #fff !important;
+  background: #176b8f !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 44, 66, 0.08);
+}
+html[data-theme='light'] .company-description {
+  color: #5b6c78; background: #f7f9fa; border-color: #d8e0e5;
+}
+html[data-theme='light'] .family-note { background: #eef4f7; border-color: #cad8e0; }
+html[data-theme='light'] .family-note h2,
+html[data-theme='light'] .family-note strong { color: #17364a; }
+html[data-theme='light'] .family-note p { color: #4f6471; }
+html[data-theme='light'] .family-note a,
+html[data-theme='light'] .metric-source:hover,
+html[data-theme='light'] .source-mini a:hover,
+html[data-theme='light'] .timeline-detail > a,
+html[data-theme='light'] .payload-detail > a { color: #0a668f; }
+
+/* 3D viewing room */
+html[data-theme='light'] .stage-toolbar {
+  color: #3d5360; background: #f7f9fa; border-bottom-color: #d5dee4;
+}
+html[data-theme='light'] .stage,
+html[data-theme='light'] .scene-host {
+  background: #e9eef2;
+  box-shadow: inset 0 0 90px rgba(99, 119, 132, 0.1);
+}
+html[data-theme='light'] .scale-badge,
+html[data-theme='light'] .stage-foot,
+html[data-theme='light'] .model-note,
+html[data-theme='light'] .stage-heading p { color: #617480; }
+html[data-theme='light'] .scale-badge i { background: #176b8f; box-shadow: 0 0 0 3px rgba(23, 107, 143, .12); }
+html[data-theme='light'] .eyebrow,
+html[data-theme='light'] .detail-identity span,
+html[data-theme='light'] .payload-detail > span { color: #0f6e95; }
+html[data-theme='light'] .camera-controls {
+  background: rgba(255, 255, 255, .92); border-color: #c5d0d7; box-shadow: 0 12px 30px rgba(31, 52, 64, .12);
+}
+html[data-theme='light'] .camera-controls button { color: #3f5663; }
+html[data-theme='light'] .camera-controls button:hover { color: #fff; background: #176b8f; }
+html[data-theme='light'] .camera-controls > span { background: #c7d2d9; }
+html[data-theme='light'] .scene-tip,
+html[data-theme='light'] .toast { color: #fff; background: #176b8f; }
+html[data-theme='light'] .scene-message { color: #405663; }
+html[data-theme='light'] .vehicle-strip { background: #fff; border-color: #d2dce2; }
+html[data-theme='light'] .vehicle-item { border-color: #dfe6ea; }
+html[data-theme='light'] .vehicle-item:hover { background: #f1f5f7; }
+html[data-theme='light'] .vehicle-item.selected { background: #e8f1f5; }
+html[data-theme='light'] .vehicle-item.selected::before { background: #176b8f; }
+html[data-theme='light'] .item-title small,
+html[data-theme='light'] .item-height small,
+html[data-theme='light'] .item-index { color: #71818c; }
+html[data-theme='light'] .item-height { color: #203844; }
+html[data-theme='light'] .model-note button { color: #0d688f; }
+
+/* Product dossier */
+html[data-theme='light'] .detail-panel {
+  color: #17222c; background: #fff; border-left-color: #d3dde3; box-shadow: -18px 0 48px rgba(50, 69, 80, .08);
+}
+html[data-theme='light'] .status {
+  color: #775316; border-color: #d5b777; background: #fff8e8;
+}
+html[data-theme='light'] .version,
+html[data-theme='light'] .role,
+html[data-theme='light'] .mass-row p,
+html[data-theme='light'] .insight p,
+html[data-theme='light'] .part-detail p,
+html[data-theme='light'] .material p,
+html[data-theme='light'] .source-mini,
+html[data-theme='light'] .source-scroll p { color: #5f707b; }
+html[data-theme='light'] .spec-grid,
+html[data-theme='light'] .technical-summary,
+html[data-theme='light'] .part-list button,
+html[data-theme='light'] .source-scroll section { border-color: #d7e0e5; }
+html[data-theme='light'] .spec-grid > div + div { border-left-color: #d7e0e5; }
+html[data-theme='light'] .spec-grid span,
+html[data-theme='light'] .mass-row > span,
+html[data-theme='light'] .technical-summary dt,
+html[data-theme='light'] .technical-summary small,
+html[data-theme='light'] .section-label small,
+html[data-theme='light'] .part-number,
+html[data-theme='light'] .material > span,
+html[data-theme='light'] .source-mini > span { color: #687b87; }
+html[data-theme='light'] .spec-grid strong,
+html[data-theme='light'] .mass-row > strong,
+html[data-theme='light'] .technical-summary dd,
+html[data-theme='light'] .part-list button,
+html[data-theme='light'] .source-scroll a { color: #243944; }
+html[data-theme='light'] .part-list button:hover,
+html[data-theme='light'] .part-list button.active { color: #103f55; background: #e6f0f4; }
+html[data-theme='light'] .part-list button svg { color: #176b8f; }
+html[data-theme='light'] .material { border-left-color: #176b8f; }
+html[data-theme='light'] .dimension-note { color: #87641e; }
+html[data-theme='light'] .focus-button,
+html[data-theme='light'] .reset-comparison,
+html[data-theme='light'] .table-sort-reset {
+  color: #38515e; border-color: #bdcad2; background: #fff;
+}
+html[data-theme='light'] .focus-button:hover,
+html[data-theme='light'] .reset-comparison:hover,
+html[data-theme='light'] .table-sort-reset:hover:not(:disabled) {
+  color: #fff; background: #176b8f; border-color: #176b8f;
+}
+html[data-theme='light'] .source-dialog {
+  color: #17222c !important; background: #fff !important; border-color: #c9d5dc !important;
+  box-shadow: 0 30px 90px rgba(31, 51, 63, .22) !important;
+}
+
+/* Cross-company comparison */
+html[data-theme='light'] .comparison-section { background: #f3f6f8; border-top-color: #9fb9c7; }
+html[data-theme='light'] .comparison-intro p,
+html[data-theme='light'] .comparison-table > p,
+html[data-theme='light'] .table-title span { color: #596d79; }
+html[data-theme='light'] .comparison-picker { background: #fff; border-color: #cad6dd; }
+html[data-theme='light'] .comparison-picker legend { color: #263b47; }
+html[data-theme='light'] .comparison-picker legend span,
+html[data-theme='light'] .picker-company-title,
+html[data-theme='light'] .picker-item small,
+html[data-theme='light'] .picker-height { color: #657985; }
+html[data-theme='light'] .picker-item { background: #f7f9fa; border-color: #d4dde3; }
+html[data-theme='light'] .picker-item:hover { background: #eef4f7; }
+html[data-theme='light'] .picker-item.checked { background: #e4f0f5; border-color: #4a8fac; }
+html[data-theme='light'] .comparison-table { background: #fff; border-top-color: #cbd6dc; }
+html[data-theme='light'] .comparison-table th { color: #344b58; background: #e8eef2; }
+html[data-theme='light'] .comparison-table td { color: #3c505b; border-color: #dde5e9; }
+html[data-theme='light'] .comparison-table td small,
+html[data-theme='light'] .comparison-table .product-company { color: #687b86; }
+html[data-theme='light'] .comparison-table th:first-child,
+html[data-theme='light'] .comparison-table td:first-child { background: #f1f5f7; box-shadow: 1px 0 #cad6dd; }
+html[data-theme='light'] .sort-buttons button { color: #506875; border-color: #becbd3; }
+html[data-theme='light'] .sort-buttons button:hover,
+html[data-theme='light'] .sort-buttons button[aria-pressed='true'] { color: #fff; background: #176b8f; }
+
+/* Reusability research */
+html[data-theme='light'] .reuse-section {
+  background: radial-gradient(circle at 88% 4%, rgba(53, 126, 157, .09), transparent 28rem), #eef3f6;
+  border-top-color: #9fb9c7;
+}
+html[data-theme='light'] .reuse-heading > div:first-child > p,
+html[data-theme='light'] .reuse-kpis span,
+html[data-theme='light'] .panel-toolbar small,
+html[data-theme='light'] .timeline-legend > span,
+html[data-theme='light'] .panel-note { color: #596d79; }
+html[data-theme='light'] .reuse-kpis,
+html[data-theme='light'] .reuse-panel { background: #fff; border-color: #cbd7de; }
+html[data-theme='light'] .reuse-kpis p { border-color: #d8e1e6; }
+html[data-theme='light'] .reuse-kpis strong { color: #155f80; }
+html[data-theme='light'] .panel-toolbar { background: #eaf0f3; border-color: #ccd8df; }
+html[data-theme='light'] .panel-toolbar > div:first-child > span { color: #1d3542; }
+html[data-theme='light'] .timeline-detail {
+  background: linear-gradient(105deg, #e3edf2, #f9fbfc 68%); border-color: #cad7de;
+}
+html[data-theme='light'] .detail-identity h3,
+html[data-theme='light'] .timeline-detail dd,
+html[data-theme='light'] .payload-name strong,
+html[data-theme='light'] .payload-value,
+html[data-theme='light'] .payload-detail > strong { color: #203844; }
+html[data-theme='light'] .detail-identity p,
+html[data-theme='light'] .timeline-detail dt,
+html[data-theme='light'] .timeline-company span,
+html[data-theme='light'] .payload-name small,
+html[data-theme='light'] .payload-value small,
+html[data-theme='light'] .payload-axis-track span,
+html[data-theme='light'] .payload-detail p,
+html[data-theme='light'] .payload-detail .payload-explanation { color: #5e7380; }
+html[data-theme='light'] .timeline-legend { background: #f8fafb; border-color: #d2dce2; }
+html[data-theme='light'] .founding-marker { border-color: #9b6b1e; background: #fff; box-shadow: 0 0 0 3px rgba(155, 107, 30, .1); }
+html[data-theme='light'] .founding-node > span { color: #79591f; }
+html[data-theme='light'] .founding-node:hover .founding-marker,
+html[data-theme='light'] .founding-node:focus-visible .founding-marker { background: #c69a48; }
+html[data-theme='light'] .capability-marker.is-hollow,
+html[data-theme='light'] .track-break { background: #f7f9fa; }
+html[data-theme='light'] .timeline-axis-row { background: #f3f6f8; }
+html[data-theme='light'] .timeline-axis-label,
+html[data-theme='light'] .timeline-axis,
+html[data-theme='light'] .timeline-company { border-color: #bbcbd4; }
+html[data-theme='light'] .timeline-axis-label,
+html[data-theme='light'] .timeline-axis > span,
+html[data-theme='light'] .axis-break { color: #566d7b; }
+html[data-theme='light'] .timeline-row { border-bottom-color: #b8c8d1; }
+html[data-theme='light'] .timeline-row.tone-a { background: #f8fafb; }
+html[data-theme='light'] .timeline-row.tone-b { background: #edf2f5; }
+html[data-theme='light'] .timeline-company,
+html[data-theme='light'] .timeline-row.tone-b .timeline-company {
+  background: rgba(255, 255, 255, .62); box-shadow: inset 4px 0 0 #b78c43;
+}
+html[data-theme='light'] .timeline-row.tone-b .timeline-company { box-shadow: inset 4px 0 0 #5d8498; }
+html[data-theme='light'] .timeline-company strong { color: #203844; }
+html[data-theme='light'] .timeline-track::before { background: #a8bac4; }
+html[data-theme='light'] .year-guide { background: #ccd8de; }
+html[data-theme='light'] .timeline-node { color: #4f6470; }
+html[data-theme='light'] .timeline-node:hover,
+html[data-theme='light'] .timeline-node:focus-visible,
+html[data-theme='light'] .timeline-node.is-selected {
+  color: #0f4057; background: #dcebf1; outline-color: #5c96ae;
+}
+html[data-theme='light'] .payload-row { border-color: #d9e2e7; }
+html[data-theme='light'] .payload-row:hover,
+html[data-theme='light'] .payload-row:focus-visible,
+html[data-theme='light'] .payload-row.is-selected { background: #e6f0f4; }
+html[data-theme='light'] .payload-bars { border-color: #c2cfd7; }
+html[data-theme='light'] .payload-guide { background: #d4dee4; }
+html[data-theme='light'] .payload-max { background: #8094a0; }
+html[data-theme='light'] .payload-reuse { background: #1679a5; }
+html[data-theme='light'] .payload-row.is-design .payload-max { color: #8094a0; }
+html[data-theme='light'] .payload-row.is-design .payload-reuse { color: #1679a5; }
+html[data-theme='light'] .payload-detail { background: #e9f1f4; border-color: #c6d5dc; }
+html[data-theme='light'] .payload-detail .payload-explanation { border-color: #c7d5dc; }
+html[data-theme='light'] .bottom-bar { color: #61737e; background: #fff; border-color: #d3dde3; }
+html[data-theme='light'] .bottom-bar a:hover { color: #0d688f; }
+
+@media (max-width: 900px) {
+  html[data-theme='light'] .top-actions { background: rgba(255, 255, 255, .98); }
+}
