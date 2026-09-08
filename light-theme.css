@@ -121,8 +121,8 @@ html[data-theme='light'] .stage-toolbar {
 }
 html[data-theme='light'] .stage,
 html[data-theme='light'] .scene-host {
-  background: #e9eef2;
-  box-shadow: inset 0 0 90px rgba(99, 119, 132, 0.1);
+  background: #b9c8d1;
+  box-shadow: inset 0 0 110px rgba(45, 68, 82, 0.16);
 }
 html[data-theme='light'] .scale-badge,
 html[data-theme='light'] .stage-foot,
