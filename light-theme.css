@@ -62,12 +62,14 @@ html[data-theme='light'] .theme-toggle:hover {
   background: #176b8f;
 }
 html[data-theme='light'] .stage-sort,
+html[data-theme='light'] .detail-toggle,
 html[data-theme='light'] .picker-toggle {
   color: #38515e;
   border-color: #bdcad2;
   background: #fff;
 }
 html[data-theme='light'] .stage-sort:hover,
+html[data-theme='light'] .detail-toggle:hover,
 html[data-theme='light'] .stage-sort[aria-pressed='true'],
 html[data-theme='light'] .picker-toggle:hover {
   color: #fff;
